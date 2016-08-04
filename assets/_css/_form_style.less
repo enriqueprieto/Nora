@@ -1,0 +1,239 @@
+/*
+##################################
+	FORM
+##################################
+*/
+	/*
+	///////////////////////////////////
+		INPUT
+	///////////////////////////////////
+	*/
+		/*
+		===================================
+			Text Box
+		===================================
+		*/
+			.input-txtbox{
+				padding: 10px 20px;
+				font-size: 16px;
+				border: 1px solid #CCC;
+				width: 100%;
+
+				&:hover{
+					box-shadow: 0px 0px 3px rgba(0, 0, 0, 0.3);
+				}
+
+				&:focus{
+					border: 1px solid #3498db;
+					border-left: 10px solid #3498db;
+					box-shadow: 0px 0px 10px rgba(52, 152, 219, .3);
+				}
+				&:disabled, &.input-disable{
+					box-shadow: none;
+					opacity: 0.4;
+				}
+			}
+		/*
+		===================================
+			//Text Box
+		===================================
+		*/
+	/*
+	///////////////////////////////////
+		//INPUT
+	///////////////////////////////////
+	*/
+
+	/*
+	///////////////////////////////////
+		FORM
+	///////////////////////////////////
+	*/
+		/*
+		==================================
+			FIELD
+		==================================
+		*/
+			.form-field{
+
+				.form-label, .input-txtfield{
+					display: block;
+				}
+
+				.form-label{
+					margin-bottom: 5px;
+				}
+
+				/*
+				-------------------------------
+					Sucess
+				-------------------------------
+				*/
+					&.has-success{
+						
+						.form-label{
+							color: #2ecc71;
+
+							&::selection{
+								background-color: #2ecc71;
+								color: #FFF;
+							}
+						}
+						.input-txtbox{	
+							border: 1px solid #2ecc71;
+							border-left: 5px solid #2ecc71;
+
+							&:hover{
+								box-shadow: 0px 0px 3px rgba(46, 204, 113, .3);
+							}
+							&:focus{
+								border-left: 10px solid #2ecc71;
+								box-shadow: 0px 0px 10px rgba(46, 204, 113, .3);
+							}
+						}
+					}
+				/*
+				-------------------------------
+					//Sucess
+				-------------------------------
+				*/
+
+				/*
+				-------------------------------
+					Error
+				-------------------------------
+				*/
+					&.has-error{
+						
+						.form-label{
+							color: #e74c3c;
+
+							&::selection{
+								background-color: #e74c3c;
+								color: #FFF;
+							}
+						}
+						.input-txtbox{	
+							border: 1px solid #e74c3c;
+							border-left: 5px solid #e74c3c;
+
+							&:hover{
+								box-shadow: 0px 0px 3px rgba(231, 76, 60, .3);
+							}
+							&:focus{
+								border-left: 10px solid #e74c3c;
+								box-shadow: 0px 0px 10px rgba(231, 76, 60, .3);
+							}
+						}
+					}
+				/*
+				-------------------------------
+					//Error
+				-------------------------------
+				*/
+
+				/*
+				-------------------------------
+					Warning
+				-------------------------------
+				*/
+					&.has-warning{
+						
+						.form-label{
+							color: #f1c40f;
+
+							&::selection{
+								background-color: #f1c40f;
+								color: #FFF;
+							}
+						}
+						.input-txtbox{	
+							border: 1px solid #f1c40f;
+							border-left: 5px solid #f1c40f;
+
+							&:hover{
+								box-shadow: 0px 0px 3px rgba(241, 196, 15, .3);
+							}
+							&:focus{
+								border-left: 10px solid #f1c40f;
+								box-shadow: 0px 0px 10px rgba(241, 196, 15, .3);
+							}
+						}
+					}
+				/*
+				-------------------------------
+					//Warning
+				-------------------------------
+				*/
+			}
+		/*
+		==================================
+			//FIELD
+		==================================
+		*/
+	/*
+	///////////////////////////////////
+		//FORM
+	///////////////////////////////////
+	*/
+
+	/*
+	///////////////////////////////////
+		SELECT
+	///////////////////////////////////
+	*/
+		.form-select{
+			.form-control{
+				font-size: 16px;
+				padding: 10px 20px;
+				width: 100%;
+				border: 1px solid #CCC;
+				background-color: #FFF;
+
+				> .fa{
+					top: 10px;
+					right: 20px;
+				}
+				&:disabled, &.input-disable{
+					box-shadow: none;
+					opacity: 0.4;
+				}
+			}			
+			.form-options{
+				top: calc(~"-50% - 20px");
+				left: 0;
+				right: 0;
+				margin: 0;
+				padding: 0;
+				margin-right: auto;
+				margin-left: auto;
+				border: 1px solid #CCC;
+				box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.3);
+				background-color: #F8F8F8;
+				color: #333;
+
+				> li{
+					padding: 10px 15px;
+
+					&:hover{
+						background-color: rgba(0, 0, 0, 0.3);
+					}
+				}
+			}
+			&:hover{
+				box-shadow: 0px 0px 3px rgba(0, 0, 0, 0.3);
+			}
+			&:focus{
+				box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+			}
+		}
+	/*
+	///////////////////////////////////
+		//SELECT
+	///////////////////////////////////
+	*/
+/*
+##################################
+	//FORM
+##################################
+*/
