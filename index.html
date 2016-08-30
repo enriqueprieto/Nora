@@ -13,112 +13,176 @@
             <script type="text/javascript" src="js/html5shiv.min.js"></script>  
         <![endif]-->
         <link rel="stylesheet" type="text/css" href="css/nora1.0.min.css">
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700" rel="stylesheet">
+        <link rel="stylesheet" type="text/css" href="css/style.css">
         <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
     </head>
     <body>
         
-        <div class="container center">
-            <header>
-                <h1>Nora 1.0</h1>
-            </header>
-            <main>
-                <section>
-                    <h2>Input</h2>
-                    <h3>Estilos</h3>
-                    <div class="row form-field-group">
-                         <div class="col-xs-3 container">
-                            <div class="form-field">
-                                <label class="form-label">Normal</label>
-                                <input type="text" class="input-txtbox" placeholder="Placeholder"/>
+        <header class="page-header">
+            <div class="container container-inner center">
+                <h1>Nora<span>v1.0.1</span></h1>
+                <p>Um Framework Front End para seu projeto</p>
+            </div>
+        </header>
+        <main class="page-main">
+            <div class="container center">
+                <div class="row">
+                    <div class="col-xs-9">
+                        <section class="page-section">
+                            <header class="container">
+                                <h2>Form Field</h2>                        
+                            </header>
+                            <div class="row page-section-item">
+                                <div class="page-section-item-header container">
+                                    <h3>Inputs & Selects</h3>
+                                    <p>Basta usar a classe <code>.field-input</code> nas tags <code class="tag">input</code>, <code class="tag">select</code> e <code class="tag">textarea</code></p>
+                                </div>
+                                <div class="row form-field-group">                                    
+                                    <div class="col-xs-3 container">
+                                        <div class="form-field">
+                                            <label class="field-label">Normal<span><code class="tag">input class="field-input"</code></span></label>
+                                            <input type="text" class="field-input" placeholder="Placeholder"/>
+                                        </div>
+                                    </div>
+                                    <div class="col-xs-3 container">
+                                        <div class="form-field has-error">
+                                            <label class="field-label">Error<span><code>.form-field.has-error</code></span></label>
+                                            <input type="text" class="field-input" placeholder="Placeholder"/>
+                                        </div>
+                                    </div>
+                                    <div class="col-xs-3 container">
+                                        <div class="form-field has-warning">
+                                            <label class="field-label">Warning<span><code>.form-field.has-warming</code></span></label>
+                                            <input type="text" class="field-input" placeholder="Placeholder"/>
+                                        </div>
+                                    </div>
+                                    <div class="col-xs-3 container">
+                                        <div class="form-field has-success">
+                                            <label class="field-label">Success<span><code>.form-field.has-success</code></span></label>
+                                            <input type="text" class="field-input" placeholder="Placeholder"/>
+                                        </div>
+                                    </div>
+                                    <div class="col-xs-3 container">
+                                        <div class="form-field">
+                                            <label class="field-label">Normal<span><code class="tag">select class="field-input"</code></span></label>
+                                            <select class="field-input">
+                                                <option>Exemplo</option>
+                                                <option>Exemplo</option>
+                                                <option>Exemplo</option>
+                                                <option>Exemplo</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <div class="col-xs-3 container">
+                                        <div class="form-field has-error">
+                                            <label class="field-label">Error<span><code>.form-field.has-error</code></span></label>
+                                            <select class="field-input">
+                                                <option>Exemplo</option>
+                                                <option>Exemplo</option>
+                                                <option>Exemplo</option>
+                                                <option>Exemplo</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <div class="col-xs-3 container">
+                                        <div class="form-field has-warning">
+                                            <label class="field-label">Warning<span><code>.form-field.has-warming</code></span></label>
+                                            <select class="field-input">
+                                                <option>Exemplo</option>
+                                                <option>Exemplo</option>
+                                                <option>Exemplo</option>
+                                                <option>Exemplo</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <div class="col-xs-3 container">
+                                        <div class="form-field has-success">
+                                            <label class="field-label">Success<span><code>.form-field.has-success</code></span></label>
+                                            <select class="field-input">
+                                                <option>Exemplo</option>
+                                                <option>Exemplo</option>
+                                                <option>Exemplo</option>
+                                                <option>Exemplo</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <div class="col-xs-6 container">
+                                        <div class="form-field">
+                                            <label class="field-label">Normal<span><code class="tag">textarea class="field-input"</code></span></label>
+                                            <textarea class="field-input"></textarea>
+                                        </div>
+                                    </div>
+                                    <div class="col-xs-6 container">
+                                        <div class="form-field has-error">
+                                            <label class="field-label">Error<span><code>.form-field.has-error</code></span></label>
+                                            <textarea class="field-input"></textarea>
+                                        </div>
+                                    </div>
+                                    <div class="col-xs-6 container">
+                                        <div class="form-field has-warning">
+                                            <label class="field-label">Warning<span><code>.form-field.has-warning</code></span></label>
+                                            <textarea class="field-input"></textarea>
+                                        </div>
+                                    </div>
+                                    <div class="col-xs-6 container">
+                                        <div class="form-field has-success">
+                                            <label class="field-label">Success<span><code>.form-field.has-success</code></span></label>
+                                            <textarea class="field-input"></textarea>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
-                        </div>
-                        <div class="col-xs-3 container">
-                            <div class="form-field has-error">
-                                <label class="form-label">Error (.has-error)</label>
-                                <input type="text" class="input-txtbox" placeholder="Placeholder"/>
+                        </section>
+                        <section>
+                            <h2>Buttons</h2>
+                            <h3>Estilos</h3>
+                            <div class="row">
+                                <button class="btn">Normal</button>
+                                <button class="btn btn-info">Info</button>
+                                <button class="btn btn-primary">Primary</button>
+                                <button class="btn btn-success">Success</button>
+                                <button class="btn btn-error">Error</button>
+                                <button class="btn btn-warning">Warning</button>
+                                <button class="btn btn-warning" disabled>Disable</button>
+                                <button class="btn btn-primary btn-with-icon"><i class="fa fa-star"></i>Com Icone</button>
+                                <button class="btn btn-with-icon">Com Icone <i class="fa fa-star"></i></button>
+                                <button class="btn btn-with-icon btn-primary"><i class="fa fa-star"></i></button>
+                                <button class="btn btn-with-icon btn-circle btn-primary"><i class="fa fa-star"></i></button>
                             </div>
-                        </div>
-                        <div class="col-xs-3 container">
-                            <div class="form-field has-warning">
-                                <label class="form-label">Aviso (.has-warning)</label>
-                                <input type="text" class="input-txtbox" placeholder="Placeholder"/>
+                            <h3>Tamanhos</h3>
+                            <div class="row">
+                                <button class="btn btn-primary btn-xsm">Extra Small</button>
+                                <button class="btn btn-primary btn-sm">Small</button>
+                                <button class="btn btn-primary">Normal</button>
+                                <button class="btn btn-primary btn-md">Mediun</button>
+                                <button class="btn btn-primary btn-lg">Large</button>
                             </div>
-                        </div>
-                        <div class="col-xs-3 container">
-                            <div class="form-field has-success">
-                                <label class="form-label">Sucesso (.has-success)</label>
-                                <input type="text" class="input-txtbox" placeholder="Placeholder"/>
+                        </section>
+                        <section>
+                            <h2>Labels</h2>
+                            <h3>Estilos</h3>
+                            <div class="row">
+                                <label>Normal</label>
+                                <label class="label-info">Info</label>
+                                <label class="label-primary">Primary</label>
+                                <label class="label-success">Success</label>
+                                <label class="label-error">Error</label>
+                                <label class="label-warning">Warning</label>
                             </div>
-                        </div>
-                        <div class="col-xs-3 container">
-                            <div class="form-field">
-                                <label class="form-label">Disable (input-txtbox.input-disable)</label>
-                                <input type="text" class="input-txtbox input-disable" disabled placeholder="Placeholder"/>
+                            <h3>Tamanhos</h3>
+                            <div class="row">
+                                <label class="label-xsm">Extra Small</label>
+                                <label class="label-sm">Small</label>
+                                <label>Normal</label>
+                                <label class="label-md">Mediun</label>
+                                <label class="label-lg">Large</label>
                             </div>
-                        </div>
+                        </section>
                     </div>
-                    <h3>Selects</h3>
-                    <div class="row">
-                        <div class="col-xs-3 container">
-                            <div class="form-select">
-                                <input type="hidden" class="input-control" />
-                                <button class="form-control">Selecione um item <i class="fa fa-caret-down"></i></button>
-                                <ul class="form-options">
-                                   <li>Teste 1</li> 
-                                   <li>Teste 2</li> 
-                                   <li>Teste 3</li> 
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                </section>
-                <section>
-                    <h2>Buttons</h2>
-                    <h3>Estilos</h3>
-                    <div class="row">
-                        <button class="btn">Normal</button>
-                        <button class="btn btn-info">Info</button>
-                        <button class="btn btn-primary">Primary</button>
-                        <button class="btn btn-success">Success</button>
-                        <button class="btn btn-error">Error</button>
-                        <button class="btn btn-warning">Warning</button>
-                        <button class="btn btn-warning" disabled>Disable</button>
-                        <button class="btn btn-primary btn-with-icon"><i class="fa fa-star"></i>Com Icone</button>
-                        <button class="btn btn-with-icon">Com Icone <i class="fa fa-star"></i></button>
-                        <button class="btn btn-with-icon btn-primary"><i class="fa fa-star"></i></button>
-                        <button class="btn btn-with-icon btn-circle btn-primary"><i class="fa fa-star"></i></button>
-                    </div>
-                    <h3>Tamanhos</h3>
-                    <div class="row">
-                        <button class="btn btn-primary btn-xsm">Extra Small</button>
-                        <button class="btn btn-primary btn-sm">Small</button>
-                        <button class="btn btn-primary">Normal</button>
-                        <button class="btn btn-primary btn-md">Mediun</button>
-                        <button class="btn btn-primary btn-lg">Large</button>
-                    </div>
-                </section>
-                <section>
-                    <h2>Labels</h2>
-                    <h3>Estilos</h3>
-                    <div class="row">
-                        <label>Normal</label>
-                        <label class="label-info">Info</label>
-                        <label class="label-primary">Primary</label>
-                        <label class="label-success">Success</label>
-                        <label class="label-error">Error</label>
-                        <label class="label-warning">Warning</label>
-                    </div>
-                    <h3>Tamanhos</h3>
-                    <div class="row">
-                        <label class="label-xsm">Extra Small</label>
-                        <label class="label-sm">Small</label>
-                        <label>Normal</label>
-                        <label class="label-md">Mediun</label>
-                        <label class="label-lg">Large</label>
-                    </div>
-                </section>
-            </main>
-        </div>   
+                </div>
+            </div>   
+        </main>
         <script type="text/javascript" src="js/jquery-3.0.0.min.js"></script>
         <script type="text/javascript" src="js/nora.1.0.min.js"></script>
     </body>

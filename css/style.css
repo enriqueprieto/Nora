@@ -46,6 +46,7 @@
 		}
 		.page-map-links > li .page-map-sub > li a{
 			display: block;
+			font-size: 14px;
 			padding: 10px 15px;
 		}
 		.page-map-links > li.page-map-header{
@@ -142,11 +143,11 @@
 				margin-bottom: 10px;
 				font-size: 28px;
 			}
-			.page-section-item .form-field .form-label span{
+			.page-section-item .form-field .field-label span{
 				display: block;
 				margin: 10px 0;
 			}
-			.page-section-item .form-field .form-label code{
+			.page-section-item .form-field .field-label code{
 				font-size: 12px;
 				margin: 0;
 			}
