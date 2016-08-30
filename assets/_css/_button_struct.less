@@ -12,7 +12,9 @@
 		cursor: pointer;
 		display: inline-block;
 		font-size: 16px;
-
+		&:focus{
+			outline: none;
+		}
 		&:disabled, &.btn-disable{
 			cursor: default;
 		}
@@ -96,7 +98,7 @@
 				&.btn-with-icon{
 					> .fa{
 						vertical-align: baseline;
-					}					
+					}				
 				}
 			/*
 			===================================

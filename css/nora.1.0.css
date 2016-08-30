@@ -122,6 +122,9 @@
 		/////////////////////////////////////
 		*/
 }
+.btn:focus {
+  outline: none;
+}
 .btn:disabled,
 .btn.btn-disable {
   cursor: default;
@@ -156,7 +159,7 @@
   padding: 10px 15px;
   border: 0;
   border-radius: 3px;
-  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2);
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
   background-color: #F8F8F8;
   /*
 		//////////////////////////////////////////////
@@ -261,6 +264,9 @@
 }
 .btn:hover,
 .btn:focus {
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.3);
+}
+.btn:active {
   box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.5);
 }
 .btn:disabled,
@@ -288,12 +294,20 @@
   background-color: #1abc9c;
   color: #FFF;
 }
-.btn.btn-with-icon > .fa:first-child {
-  margin: 0 5px;
+.btn.btn-with-icon > .fa {
+  margin-right: 10px;
+}
+.btn.btn-with-icon.btn-icon-right > .fa {
+  margin-right: 0;
+  margin-left: 10px;
 }
 .btn.btn-with-icon.btn-circle {
-  padding: 10px 7px;
+  line-height: 1;
+  padding: 10px;
   border-radius: 50%;
+}
+.btn.btn-with-icon.btn-circle > .fa {
+  margin: 0;
 }
 .btn.btn-xsm {
   padding: 5px 10px;
@@ -1069,11 +1083,11 @@
 	=============================
 	*/
 code {
+  vertical-align: baseline;
   padding: 3px 5px;
   border-radius: 3px;
   background-color: #eee;
-  font-weight: 700;
-  color: rgba(0, 0, 0, 0.6);
+  color: #e74c3c;
   /*
 			-------------------------------
 				TAG
@@ -1095,6 +1109,33 @@ code.tag::after {
 	=============================
 		//CODE
 	=============================
+	*/
+/*
+	============================
+		TEXT
+	============================
+	*/
+/*
+		----------------------------
+			NOTIFICATION
+		----------------------------
+		*/
+.text-notification {
+  line-height: 1.7;
+  padding: 15px;
+  border-radius: 3px;
+  background-color: #fbfbfb;
+  color: rgba(0, 0, 0, 0.6);
+}
+/*
+		----------------------------
+			//NOTIFICATION
+		----------------------------
+		*/
+/*
+	============================
+		//TEXT
+	============================
 	*/
 /*
 ##################################

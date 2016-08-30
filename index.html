@@ -6,7 +6,7 @@
     <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title></title>
+        <title>Nora v1.0.1 - Framework Front End</title>
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <!--[if lt IE 9]>      
@@ -133,30 +133,64 @@
                                     </div>
                                 </div>
                             </div>
-                        </section>
-                        <section>
-                            <h2>Buttons</h2>
-                            <h3>Estilos</h3>
-                            <div class="row">
-                                <button class="btn">Normal</button>
-                                <button class="btn btn-info">Info</button>
-                                <button class="btn btn-primary">Primary</button>
-                                <button class="btn btn-success">Success</button>
-                                <button class="btn btn-error">Error</button>
-                                <button class="btn btn-warning">Warning</button>
-                                <button class="btn btn-warning" disabled>Disable</button>
-                                <button class="btn btn-primary btn-with-icon"><i class="fa fa-star"></i>Com Icone</button>
-                                <button class="btn btn-with-icon">Com Icone <i class="fa fa-star"></i></button>
-                                <button class="btn btn-with-icon btn-primary"><i class="fa fa-star"></i></button>
-                                <button class="btn btn-with-icon btn-circle btn-primary"><i class="fa fa-star"></i></button>
+                            <div class="container tow">
+                                <p class="text-notification">
+                                    <strong>Importante:</strong> para que o estilo de <code>error</code>, <code>warning</code> e <code>success</code> funcione o <code class="tag">input class="field-input"</code> tem que estar dentro de uma <code class="tag">div class="form-field"</code>
+                                </p>
                             </div>
-                            <h3>Tamanhos</h3>
-                            <div class="row">
-                                <button class="btn btn-primary btn-xsm">Extra Small</button>
-                                <button class="btn btn-primary btn-sm">Small</button>
-                                <button class="btn btn-primary">Normal</button>
-                                <button class="btn btn-primary btn-md">Mediun</button>
-                                <button class="btn btn-primary btn-lg">Large</button>
+                        </section>
+                        <section class="page-section">
+                            <header class="container">
+                                <h2>Buttons</h2>
+                            </header>
+                            <div class="page-section-item">    
+                                <div class="page-section-item-header container">                                    
+                                    <h3>Estilos</h3>
+                                    <p>Para usar o estilo de botão basta adicionar a classe <code>.btn</code> nas tags <code class="tag">button</code> ou <code class="tag">a</code></p>
+                                </div>                            
+                                <div class="row container">
+                                    <button class="btn">.btn</button>
+                                    <button class="btn btn-info">.btn-info</button>
+                                    <button class="btn btn-primary">.btn-primary</button>
+                                    <button class="btn btn-error">.btn-error</button>
+                                    <button class="btn btn-warning">.btn-warning</button>
+                                    <button class="btn btn-success">.btn-success</button>
+                                </div>
+                            </div>
+                            <div class="page-section-item">    
+                                <div class="page-section-item-header container">   
+                                    <h3>Com ícones</h3>
+                                    <p>Pra criar botões com ícones basta adiciona a classe <code>.btn-with-icon</code> a classe <code>.btn</code></p>
+                                </div>
+                                <div class="row">
+                                    <div class="col-xs-4 container">
+                                        <h4>Normal</h4>
+                                        <p><span><code class="tag">button class="btn btn-with-icon"</code></span></p>
+                                        <button class="btn btn-with-icon"><i class="fa fa-star"></i> With Icon</button>
+                                    </div>
+                                    <div class="col-xs-4 container">
+                                        <h4>Circle</h4>
+                                        <p><span><code>.btn-circle</code></span></p>
+                                        <button class="btn btn-with-icon btn-circle"><i class="fa fa-star"></i></button>
+                                    </div>
+                                    <div class="col-xs-4 container">
+                                        <h4>Ícone a direita</h4>
+                                        <p><span><code>.btn-icon-right</code></span></p>
+                                        <button class="btn btn-with-icon btn-icon-right">Á Direita<i class="fa fa-star"></i></button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="page-section-item container">    
+                                <div class="page-section-item-header">   
+                                    <h3>Tamanhos</h3>
+                                </div>
+                                <div class="row">
+                                    <button class="btn btn-primary btn-xsm">Extra Small</button>
+                                    <button class="btn btn-primary btn-sm">Small</button>
+                                    <button class="btn btn-primary">Normal</button>
+                                    <button class="btn btn-primary btn-md">Mediun</button>
+                                    <button class="btn btn-primary btn-lg">Large</button>
+                                </div>
                             </div>
                         </section>
                         <section>
@@ -191,6 +225,11 @@
                             </li>
                             <li>
                                 <a href="#">Buttons</a>
+                                <ul class="page-map-sub">
+                                    <li><a href="#">Estilo</a></li>
+                                    <li><a href="#">Com ícones</a></li>
+                                    <li><a href="#">Tamanhos</a></li>
+                                </ul>
                             </li>
                         </ul>
                     </div>

@@ -136,7 +136,11 @@
 		----------------------------------------
 		*/
 			.page-section-item{
-
+				margin-bottom: 20px;
+			}
+			.page-section-item p span{
+				display: block;
+				font-size: 12px;
 			}
 			.page-section-item .page-section-item-header h3{
 				margin: 0;
