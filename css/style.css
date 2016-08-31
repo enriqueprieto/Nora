@@ -34,8 +34,8 @@
 			display: block;
 		}
 		.page-map-links > li .page-map-sub{
-			animation-name: fadeIn;
-			animation-duration: 0.5s;
+			/*animation-name: fadeIn;
+			animation-duration: 0.5s;*/
 			display: none;
 			margin: 0;
 			padding: 0;
@@ -86,6 +86,7 @@
 		}
 		.page-header p{
 			margin: 0;
+			margin-bottom: 20px;
 			font-size: 18px;
 			font-weight: 300;
 		}
