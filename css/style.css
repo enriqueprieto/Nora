@@ -9,6 +9,11 @@
 	============================================
 	*/
 		.page-map-links{
+			-webkit-transition: all .25s;
+			   -moz-transition: all .25s;
+			    -ms-transition: all .25s;
+			     -o-transition: all .25s;
+			        transition: all .25s;
 			margin: 0;
 			padding: 0;
 			border-radius: 3px;

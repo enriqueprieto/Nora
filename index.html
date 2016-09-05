@@ -18,7 +18,6 @@
         <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
     </head>
     <body>
-        
         <header class="page-header">
             <div class="container container-inner center">
                 <h1>Nora<span>v1.0.1</span></h1>
@@ -30,11 +29,11 @@
             <div class="container center">
                 <div class="row">
                     <div class="col-xs-9">
-                        <section class="page-section">
+                        <section class="page-section" id="form-field">
                             <header class="container">
                                 <h2>Form Field</h2>                        
                             </header>
-                            <div class="row page-section-item">
+                            <div class="row page-section-item" id="inputs">
                                 <div class="page-section-item-header container">
                                     <h3>Inputs, Selects e Textareas</h3>
                                     <p>Basta usar a classe <code>.field-input</code> nas tags <code class="tag">input</code>, <code class="tag">select</code> e <code class="tag">textarea</code></p>
@@ -140,11 +139,11 @@
                                 </p>
                             </div>
                         </section>
-                        <section class="page-section">
+                        <section class="page-section" id="buttons">
                             <header class="container">
                                 <h2>Buttons</h2>
                             </header>
-                            <div class="page-section-item">    
+                            <div class="page-section-item" id="buttons-estilo">    
                                 <div class="page-section-item-header container">                                    
                                     <h3>Estilos</h3>
                                     <p>Para usar o estilo de botão basta adicionar a classe <code>.btn</code> nas tags <code class="tag">button</code> ou <code class="tag">a</code></p>
@@ -158,10 +157,10 @@
                                     <button class="btn btn-success">.btn-success</button>
                                 </div>
                             </div>
-                            <div class="page-section-item">    
+                            <div class="page-section-item" id="buttons-icone">    
                                 <div class="page-section-item-header container">   
                                     <h3>Com ícones</h3>
-                                    <p>Pra criar botões com ícones basta adiciona a classe <code>.btn-with-icon</code> a classe <code>.btn</code></p>
+                                    <p>Para criar botões com ícones basta adiciona a classe <code>.btn-with-icon</code> a classe <code>.btn</code></p>
                                 </div>
                                 <div class="row">
                                     <div class="col-xs-4 container">
@@ -181,37 +180,48 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="page-section-item container">    
+                            <div class="page-section-item container" id="buttons-tamanho">    
                                 <div class="page-section-item-header">   
                                     <h3>Tamanhos</h3>
+                                    <p>Para alterar o tamanho dos botões basta adicionar junto a classe <code>.btn</code> as classe <code>.btn-size</code></p>
                                 </div>
                                 <div class="row">
-                                    <button class="btn btn-primary btn-xsm">Extra Small</button>
-                                    <button class="btn btn-primary btn-sm">Small</button>
-                                    <button class="btn btn-primary">Normal</button>
-                                    <button class="btn btn-primary btn-md">Mediun</button>
-                                    <button class="btn btn-primary btn-lg">Large</button>
+                                    <button class="btn btn-info btn-xsm">.btn-xsm</button>
+                                    <button class="btn btn-info btn-sm">.btn-sm</button>
+                                    <button class="btn btn-info">.btn</button>
+                                    <button class="btn btn-info btn-md">.btn-md</button>
+                                    <button class="btn btn-info btn-lg">.btn-lg</button>
                                 </div>
                             </div>
                         </section>
-                        <section>
-                            <h2>Labels</h2>
-                            <h3>Estilos</h3>
-                            <div class="row">
-                                <label>Normal</label>
-                                <label class="label-info">Info</label>
-                                <label class="label-primary">Primary</label>
-                                <label class="label-success">Success</label>
-                                <label class="label-error">Error</label>
-                                <label class="label-warning">Warning</label>
+                        <section class="page-section" id="labels">
+                            <header class="container">
+                                <h2>Labels</h2>
+                            </header>
+                            <div class="page-section-item container" id="labels-estilo">   
+                                <div class="page-section-item-header">
+                                    <h3>Estilos</h3>
+                                    <p>Para usar os estilos nos textos, basta usar a classe <code>.label-style</code> e o estilo que deseja nas tags <code class="tag">label</code>, <code class="tag">span</code> e <code class="tag">p</code></p>                                    
+                                </div>                             
+                                <div class="row">
+                                    <label class="label-info">.label-info</label>
+                                    <label class="label-primary">.label-primary</label>
+                                    <label class="label-error">.label-error</label>
+                                    <label class="label-warning">label-warning</label>
+                                    <label class="label-success">.label-success</label>
+                                </div>
                             </div>
-                            <h3>Tamanhos</h3>
-                            <div class="row">
-                                <label class="label-xsm">Extra Small</label>
-                                <label class="label-sm">Small</label>
-                                <label>Normal</label>
-                                <label class="label-md">Mediun</label>
-                                <label class="label-lg">Large</label>
+                            <div class="page-section-item container" id="labels-tamanho">
+                                <div class="page-section-item-header">
+                                    <h3>Tamanhos</h3>
+                                    <p>Para alterar o tamanho dos textos, basta usar a classe <code>.label-size</code> e o estilo que deseja nas tags <code class="tag">label</code>, <code class="tag">span</code> e <code class="tag">p</code></p>
+                                </div>
+                                <div class="row">
+                                    <label class="label-xsm">.label-xsm</label>
+                                    <label class="label-sm">.label-sm</label>
+                                    <label class="label-md">.label-md</label>
+                                    <label class="label-lg">.label-lg</label>
+                                </div>
                             </div>
                         </section>
                     </div>
@@ -219,17 +229,24 @@
                         <ul class="page-map-links">
                             <li class="page-map-header"><i class="fa fa-code"></i> Links úteis</li>
                             <li>
-                                <a href="#form-field">Form Field</a>
+                                <a href="#form-field" class="link-scroll">Form Field</a>
                                 <ul class="page-map-sub">
-                                    <li><a href="#">Inputs, Selects e Textareas</a></li>
+                                    <li><a href="#inputs" class="link-scroll">Inputs, Selects e Textareas</a></li>
                                 </ul>
                             </li>
                             <li>
-                                <a href="#">Buttons</a>
+                                <a href="#buttons" class="link-scroll">Buttons</a>
                                 <ul class="page-map-sub">
-                                    <li><a href="#">Estilo</a></li>
-                                    <li><a href="#">Com ícones</a></li>
-                                    <li><a href="#">Tamanhos</a></li>
+                                    <li><a href="#buttons-estilo" class="link-scroll">Estilo</a></li>
+                                    <li><a href="#buttons-icone" class="link-scroll">Com ícones</a></li>
+                                    <li><a href="#buttons-tamanho" class="link-scroll">Tamanhos</a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="#labels">Labels</a>
+                                <ul class="page-map-sub">
+                                    <li><a href="#labels-estilo" class="link-scroll">Estilo</a></li>
+                                    <li><a href="#labels-tamanho" class="link-scroll">Tamanhos</a></li>
                                 </ul>
                             </li>
                         </ul>
@@ -239,5 +256,6 @@
         </main>
         <script type="text/javascript" src="js/jquery-3.0.0.min.js"></script>
         <script type="text/javascript" src="js/nora.1.0.min.js"></script>
+        <script type="text/javascript" src="js/script.js"></script>
     </body>
 </html>
